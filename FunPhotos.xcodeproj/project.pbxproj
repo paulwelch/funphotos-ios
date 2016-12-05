@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA24FEF128FFD1B000E32FB /* dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA24FEE128FFD1B000E32FB /* dev.plist */; };
+		DAA39C27129FE32800B2BFFE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA39C26129FE32800B2BFFE /* iAd.framework */; };
+		DAA39C37129FE42500B2BFFE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA39C26129FE32800B2BFFE /* iAd.framework */; };
+		DABFF5AC129EAA6500D41A2B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		DABFF5AD129EAA6500D41A2B /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAAF26550F3608A200B82D17 /* dist.plist */; };
+		DABFF5AE129EAA6500D41A2B /* PhotoEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA82CA760F5CCB5B007DF834 /* PhotoEffectView.xib */; };
+		DABFF5AF129EAA6500D41A2B /* FunPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DACCFC0D0F5CE651002E455B /* FunPhotosViewController.xib */; };
+		DABFF5B0129EAA6500D41A2B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA75B9F00FC800C700B2E9DE /* icon.png */; };
+		DABFF5B1129EAA6500D41A2B /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA3081330FF05BE8003303FA /* release.plist */; };
+		DABFF5B2129EAA6500D41A2B /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC96183118FB5F4009B550E /* MainWindow-iPad.xib */; };
+		DABFF5B3129EAA6500D41A2B /* dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA24FEE128FFD1B000E32FB /* dev.plist */; };
+		DABFF5B5129EAA6500D41A2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		DABFF5B6129EAA6500D41A2B /* FunPhotosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FunPhotosAppDelegate.m */; };
+		DABFF5B7129EAA6500D41A2B /* TwoWaveMirrorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE6ACEF0F56596E000B74F8 /* TwoWaveMirrorEffect.m */; };
+		DABFF5B8129EAA6500D41A2B /* OneWaveMirrorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D130F575F5000A91C82 /* OneWaveMirrorEffect.m */; };
+		DABFF5B9129EAA6500D41A2B /* BaseImageEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D1F0F57609000A91C82 /* BaseImageEffect.m */; };
+		DABFF5BA129EAA6500D41A2B /* EmphasizeColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D550F57657400A91C82 /* EmphasizeColorEffect.m */; };
+		DABFF5BB129EAA6500D41A2B /* PhotoEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82CA8D0F5CCD6F007DF834 /* PhotoEffectViewController.m */; };
+		DABFF5BC129EAA6500D41A2B /* FunPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACCFC100F5CE65E002E455B /* FunPhotosViewController.m */; };
+		DABFF5BD129EAA6500D41A2B /* ClickableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0CDE450F91FCF400C39F5E /* ClickableImageView.m */; };
+		DABFF5BF129EAA6500D41A2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		DABFF5C0129EAA6500D41A2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		DABFF5C1129EAA6500D41A2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		DAC96167118FB596009B550E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		DAC96168118FB596009B550E /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAAF26550F3608A200B82D17 /* dist.plist */; };
+		DAC96169118FB596009B550E /* PhotoEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA82CA760F5CCB5B007DF834 /* PhotoEffectView.xib */; };
+		DAC9616A118FB596009B550E /* FunPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DACCFC0D0F5CE651002E455B /* FunPhotosViewController.xib */; };
+		DAC9616B118FB596009B550E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA75B9F00FC800C700B2E9DE /* icon.png */; };
+		DAC9616C118FB596009B550E /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA3081330FF05BE8003303FA /* release.plist */; };
+		DAC9616E118FB596009B550E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		DAC9616F118FB596009B550E /* FunPhotosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FunPhotosAppDelegate.m */; };
+		DAC96170118FB596009B550E /* TwoWaveMirrorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE6ACEF0F56596E000B74F8 /* TwoWaveMirrorEffect.m */; };
+		DAC96171118FB596009B550E /* OneWaveMirrorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D130F575F5000A91C82 /* OneWaveMirrorEffect.m */; };
+		DAC96172118FB596009B550E /* BaseImageEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D1F0F57609000A91C82 /* BaseImageEffect.m */; };
+		DAC96173118FB596009B550E /* EmphasizeColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD09D550F57657400A91C82 /* EmphasizeColorEffect.m */; };
+		DAC96174118FB596009B550E /* PhotoEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82CA8D0F5CCD6F007DF834 /* PhotoEffectViewController.m */; };
+		DAC96175118FB596009B550E /* FunPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACCFC100F5CE65E002E455B /* FunPhotosViewController.m */; };
+		DAC96176118FB596009B550E /* ClickableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0CDE450F91FCF400C39F5E /* ClickableImageView.m */; };
+		DAC96178118FB596009B550E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		DAC96179118FB596009B550E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		DAC9617A118FB596009B550E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		DAC96184118FB5F4009B550E /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC96183118FB5F4009B550E /* MainWindow-iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* FunPhotosAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunPhotosAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* FunPhotosAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunPhotosAppDelegate.m; sourceTree = "<group>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* FunPhotos_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunPhotos_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0CDE440F91FCF400C39F5E /* ClickableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableImageView.h; sourceTree = "<group>"; };
+		DA0CDE450F91FCF400C39F5E /* ClickableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableImageView.m; sourceTree = "<group>"; };
+		DA3081330FF05BE8003303FA /* release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = release.plist; sourceTree = "<group>"; };
+		DA75B9F00FC800C700B2E9DE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DA82CA760F5CCB5B007DF834 /* PhotoEffectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoEffectView.xib; sourceTree = "<group>"; };
+		DA82CA8D0F5CCD6F007DF834 /* PhotoEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEffectViewController.m; sourceTree = "<group>"; };
+		DA82CA8E0F5CCD6F007DF834 /* PhotoEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEffectViewController.h; sourceTree = "<group>"; };
+		DAA24FEE128FFD1B000E32FB /* dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dev.plist; sourceTree = "<group>"; };
+		DAA39C26129FE32800B2BFFE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DAAF26550F3608A200B82D17 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
+		DABFF5C6129EAA6500D41A2B /* FunPhotosLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunPhotosLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFF5C8129EAA6500D41A2B /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
+		DABFF5D1129EAC1E00D41A2B /* targetSetup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = targetSetup.sh; sourceTree = "<group>"; };
+		DAC9617F118FB596009B550E /* FunPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC96183118FB5F4009B550E /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		DACCFC0D0F5CE651002E455B /* FunPhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunPhotosViewController.xib; sourceTree = "<group>"; };
+		DACCFC0F0F5CE65E002E455B /* FunPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunPhotosViewController.h; sourceTree = "<group>"; };
+		DACCFC100F5CE65E002E455B /* FunPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunPhotosViewController.m; sourceTree = "<group>"; };
+		DAD09D0C0F575E4900A91C82 /* ImageEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEffect.h; sourceTree = "<group>"; };
+		DAD09D120F575F5000A91C82 /* OneWaveMirrorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneWaveMirrorEffect.h; sourceTree = "<group>"; };
+		DAD09D130F575F5000A91C82 /* OneWaveMirrorEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneWaveMirrorEffect.m; sourceTree = "<group>"; };
+		DAD09D1E0F57609000A91C82 /* BaseImageEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImageEffect.h; sourceTree = "<group>"; };
+		DAD09D1F0F57609000A91C82 /* BaseImageEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageEffect.m; sourceTree = "<group>"; };
+		DAD09D540F57657400A91C82 /* EmphasizeColorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmphasizeColorEffect.h; sourceTree = "<group>"; };
+		DAD09D550F57657400A91C82 /* EmphasizeColorEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmphasizeColorEffect.m; sourceTree = "<group>"; };
+		DAE6ACEE0F56596E000B74F8 /* TwoWaveMirrorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoWaveMirrorEffect.h; sourceTree = "<group>"; };
+		DAE6ACEF0F56596E000B74F8 /* TwoWaveMirrorEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoWaveMirrorEffect.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABFF5BE129EAA6500D41A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFF5BF129EAA6500D41A2B /* Foundation.framework in Frameworks */,
+				DABFF5C0129EAA6500D41A2B /* UIKit.framework in Frameworks */,
+				DABFF5C1129EAA6500D41A2B /* CoreGraphics.framework in Frameworks */,
+				DAA39C37129FE42500B2BFFE /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC96177118FB596009B550E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC96178118FB596009B550E /* Foundation.framework in Frameworks */,
+				DAC96179118FB596009B550E /* UIKit.framework in Frameworks */,
+				DAC9617A118FB596009B550E /* CoreGraphics.framework in Frameworks */,
+				DAA39C27129FE32800B2BFFE /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DACCFC0F0F5CE65E002E455B /* FunPhotosViewController.h */,
+				DACCFC100F5CE65E002E455B /* FunPhotosViewController.m */,
+				DA82CA8E0F5CCD6F007DF834 /* PhotoEffectViewController.h */,
+				DA82CA8D0F5CCD6F007DF834 /* PhotoEffectViewController.m */,
+				DAD09D540F57657400A91C82 /* EmphasizeColorEffect.h */,
+				DAD09D550F57657400A91C82 /* EmphasizeColorEffect.m */,
+				DAD09D1E0F57609000A91C82 /* BaseImageEffect.h */,
+				DAD09D1F0F57609000A91C82 /* BaseImageEffect.m */,
+				DAD09D120F575F5000A91C82 /* OneWaveMirrorEffect.h */,
+				DAD09D130F575F5000A91C82 /* OneWaveMirrorEffect.m */,
+				DAD09D0C0F575E4900A91C82 /* ImageEffect.h */,
+				1D3623240D0F684500981E51 /* FunPhotosAppDelegate.h */,
+				1D3623250D0F684500981E51 /* FunPhotosAppDelegate.m */,
+				DAE6ACEE0F56596E000B74F8 /* TwoWaveMirrorEffect.h */,
+				DAE6ACEF0F56596E000B74F8 /* TwoWaveMirrorEffect.m */,
+				DA0CDE440F91FCF400C39F5E /* ClickableImageView.h */,
+				DA0CDE450F91FCF400C39F5E /* ClickableImageView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9617F118FB596009B550E /* FunPhotos.app */,
+				DABFF5C6129EAA6500D41A2B /* FunPhotosLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				DAC96182118FB5F3009B550E /* Resources-iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* FunPhotos_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAA24FEE128FFD1B000E32FB /* dev.plist */,
+				DA3081330FF05BE8003303FA /* release.plist */,
+				DA75B9F00FC800C700B2E9DE /* icon.png */,
+				DACCFC0D0F5CE651002E455B /* FunPhotosViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				DAAF26550F3608A200B82D17 /* dist.plist */,
+				DA82CA760F5CCB5B007DF834 /* PhotoEffectView.xib */,
+				DABFF5C8129EAA6500D41A2B /* InfoLite.plist */,
+				DABFF5D1129EAC1E00D41A2B /* targetSetup.sh */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA39C26129FE32800B2BFFE /* iAd.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAC96182118FB5F3009B550E /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				DAC96183118FB5F4009B550E /* MainWindow-iPad.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABFF5A9129EAA6500D41A2B /* FunPhotosLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFF5C2129EAA6500D41A2B /* Build configuration list for PBXNativeTarget "FunPhotosLite" */;
+			buildPhases = (
+				DABFF5AA129EAA6500D41A2B /* ShellScript */,
+				DABFF5AB129EAA6500D41A2B /* Resources */,
+				DABFF5B4129EAA6500D41A2B /* Sources */,
+				DABFF5BE129EAA6500D41A2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunPhotosLite;
+			productName = FunPhotos;
+			productReference = DABFF5C6129EAA6500D41A2B /* FunPhotosLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC96165118FB596009B550E /* FunPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC9617B118FB596009B550E /* Build configuration list for PBXNativeTarget "FunPhotos" */;
+			buildPhases = (
+				DABFF5A0129EAA0B00D41A2B /* ShellScript */,
+				DAC96166118FB596009B550E /* Resources */,
+				DAC9616D118FB596009B550E /* Sources */,
+				DAC96177118FB596009B550E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunPhotos;
+			productName = FunPhotos;
+			productReference = DAC9617F118FB596009B550E /* FunPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "MetriWorks Inc.";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FunPhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC96165118FB596009B550E /* FunPhotos */,
+				DABFF5A9129EAA6500D41A2B /* FunPhotosLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABFF5AB129EAA6500D41A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFF5AC129EAA6500D41A2B /* MainWindow.xib in Resources */,
+				DABFF5AD129EAA6500D41A2B /* dist.plist in Resources */,
+				DABFF5AE129EAA6500D41A2B /* PhotoEffectView.xib in Resources */,
+				DABFF5AF129EAA6500D41A2B /* FunPhotosViewController.xib in Resources */,
+				DABFF5B0129EAA6500D41A2B /* icon.png in Resources */,
+				DABFF5B1129EAA6500D41A2B /* release.plist in Resources */,
+				DABFF5B2129EAA6500D41A2B /* MainWindow-iPad.xib in Resources */,
+				DABFF5B3129EAA6500D41A2B /* dev.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC96166118FB596009B550E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC96167118FB596009B550E /* MainWindow.xib in Resources */,
+				DAC96168118FB596009B550E /* dist.plist in Resources */,
+				DAC96169118FB596009B550E /* PhotoEffectView.xib in Resources */,
+				DAC9616A118FB596009B550E /* FunPhotosViewController.xib in Resources */,
+				DAC9616B118FB596009B550E /* icon.png in Resources */,
+				DAC9616C118FB596009B550E /* release.plist in Resources */,
+				DAC96184118FB5F4009B550E /* MainWindow-iPad.xib in Resources */,
+				DAA24FEF128FFD1B000E32FB /* dev.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DABFF5A0129EAA0B00D41A2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./targetSetup.sh;
+		};
+		DABFF5AA129EAA6500D41A2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./targetSetup.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABFF5B4129EAA6500D41A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFF5B5129EAA6500D41A2B /* main.m in Sources */,
+				DABFF5B6129EAA6500D41A2B /* FunPhotosAppDelegate.m in Sources */,
+				DABFF5B7129EAA6500D41A2B /* TwoWaveMirrorEffect.m in Sources */,
+				DABFF5B8129EAA6500D41A2B /* OneWaveMirrorEffect.m in Sources */,
+				DABFF5B9129EAA6500D41A2B /* BaseImageEffect.m in Sources */,
+				DABFF5BA129EAA6500D41A2B /* EmphasizeColorEffect.m in Sources */,
+				DABFF5BB129EAA6500D41A2B /* PhotoEffectViewController.m in Sources */,
+				DABFF5BC129EAA6500D41A2B /* FunPhotosViewController.m in Sources */,
+				DABFF5BD129EAA6500D41A2B /* ClickableImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC9616D118FB596009B550E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC9616E118FB596009B550E /* main.m in Sources */,
+				DAC9616F118FB596009B550E /* FunPhotosAppDelegate.m in Sources */,
+				DAC96170118FB596009B550E /* TwoWaveMirrorEffect.m in Sources */,
+				DAC96171118FB596009B550E /* OneWaveMirrorEffect.m in Sources */,
+				DAC96172118FB596009B550E /* BaseImageEffect.m in Sources */,
+				DAC96173118FB596009B550E /* EmphasizeColorEffect.m in Sources */,
+				DAC96174118FB596009B550E /* PhotoEffectViewController.m in Sources */,
+				DAC96175118FB596009B550E /* FunPhotosViewController.m in Sources */,
+				DAC96176118FB596009B550E /* ClickableImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = "Fun Photos";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DA30810E0FF05A66003303FA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		DABFF5C3129EAA6500D41A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = dev.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = InfoLite.plist;
+				OTHER_CFLAGS = "-DFUNPHOTOSLITE";
+				PRODUCT_NAME = FunPhotosLite;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DABFF5C4129EAA6500D41A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = release.plist;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = InfoLite.plist;
+				OTHER_CFLAGS = "-DFUNPHOTOSLITE";
+				PRODUCT_NAME = FunPhotosLite;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DABFF5C5129EAA6500D41A2B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = dist.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = InfoLite.plist;
+				OTHER_CFLAGS = "-DFUNPHOTOSLITE";
+				PRODUCT_NAME = FunPhotosLite;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		DAC9617C118FB596009B550E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = dev.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = FunPhotos;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC9617D118FB596009B550E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = release.plist;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = FunPhotos;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAC9617E118FB596009B550E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = dist.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FunPhotos_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = FunPhotos;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FunPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				DA30810E0FF05A66003303FA /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFF5C2129EAA6500D41A2B /* Build configuration list for PBXNativeTarget "FunPhotosLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFF5C3129EAA6500D41A2B /* Debug */,
+				DABFF5C4129EAA6500D41A2B /* Release */,
+				DABFF5C5129EAA6500D41A2B /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC9617B118FB596009B550E /* Build configuration list for PBXNativeTarget "FunPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC9617C118FB596009B550E /* Debug */,
+				DAC9617D118FB596009B550E /* Release */,
+				DAC9617E118FB596009B550E /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
