@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "ClickableImageView.h"
 
-@interface PhotoEffectViewController : UIViewController <UIActionSheetDelegate, ADBannerViewDelegate> {
+@interface PhotoEffectViewController : UIViewController <UIActionSheetDelegate> {
     IBOutlet ClickableImageView *imageView;
     IBOutlet UIToolbar *toolbar;
     IBOutlet UIBarButtonItem *cameraButton;
@@ -29,7 +29,6 @@
 	IBOutlet UILabel *instructionText;
     IBOutlet UIActivityIndicatorView *activityIndicator;
     UIView *contentView;
-    ADBannerView *banner;
 	Boolean busy;
 	int currentEmphasis;
 	int currentRedLevel;
@@ -61,7 +60,6 @@
 - (void)displayEmphasisSlider:(bool)display;
 
 @property(nonatomic, retain) IBOutlet UIView *contentView;
-@property(nonatomic, retain) IBOutlet ADBannerView *banner;
 @property (retain) IBOutlet ClickableImageView *imageView;
 @property (assign) Boolean busy;
 

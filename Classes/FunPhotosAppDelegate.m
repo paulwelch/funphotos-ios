@@ -40,25 +40,30 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
 {    
-	[application setStatusBarHidden:YES];
+	//[application setStatusBarHidden:YES];
 	self.window = [[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 	
+    viewController = [[FunPhotosViewController alloc] init];
 	[viewController setWantsFullScreenLayout:YES];
-	[window addSubview:viewController.view];
-	
+//    [self.window setRootViewController:viewController];
+    
+    NSArray *windows = [[UIApplication sharedApplication] windows];
+    for(UIWindow *w in windows) {
+        NSLog(@"window: %@",w.description);
+        if(w.rootViewController == nil){
+            UIViewController* vc = [[FunPhotosViewController alloc]initWithNibName:nil bundle:nil];
+            w.rootViewController = vc;
+        }
+    }
+
+    [window addSubview:viewController.view];
+    
 	//view to get a new image from camera or photo library
 	imageCaptureController = [[UIImagePickerController alloc] init];
 	[imageCaptureController setToolbarHidden:YES];
 	imageCaptureController.delegate = self;
 	[imageCaptureController setWantsFullScreenLayout:YES];
 	imageCaptureController.allowsEditing = NO;
-	
-	//If iPad, must be in a popover
-	if ([[UIDevice currentDevice] systemVersion] >= @"3.2" &&
-		[[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-	{
-		popoverController = [[UIPopoverController alloc] initWithContentViewController:imageCaptureController]; 
-	}
 		 
 	[self setImageCaptureSource];
 	

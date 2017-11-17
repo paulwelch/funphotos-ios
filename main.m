@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FunPhotosAppDelegate.h"
 
 int main(int argc, char *argv[]) {
     
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([FunPhotosAppDelegate class]));
     [pool release];
     return retVal;
 }

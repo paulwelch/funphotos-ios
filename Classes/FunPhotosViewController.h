@@ -7,16 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
 
-@interface FunPhotosViewController : UIViewController <ADBannerViewDelegate> 
+@interface FunPhotosViewController : UIViewController
 {
     UIView *contentView;
-    ADBannerView *banner;
 }
 
 @property(nonatomic, retain) IBOutlet UIView *contentView;
-@property(nonatomic, retain) IBOutlet ADBannerView *banner;
 
 @end
 
